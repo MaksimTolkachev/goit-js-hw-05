@@ -11,12 +11,12 @@ class Storage {
     addItem(item){
         this.items.push(item);
     }
-    removeItem(item) {
-        if(this.items.includes(item)) {
-            this.items.splice(this.items.indexOf(item, 0), 1)
-        } 
+   removeItem(item) {
+       this.items = this.items.filter(value => value !== item);
+
+    }
 }
-}
+
 
 
 
